@@ -140,7 +140,10 @@ function pushbutton5_Callback(hObject, eventdata, handles)
 im = imread('Photo1.jpg');
 gray = (0.2989 * double(im(:,:,1)) + 0.5870 * double(im(:,:,2)) + 0.1140 * double(im(:,:,3)))/255;
 im2 = edge(gray, 'Canny');
-imshow(im2,'parent', handles.axes1);
+imshow(im2,'parent', handles.axes2);
+cla(handles.axes3);
+cla(handles.axes4);;
+
 % --- Executes on button press in pushbutton6.
 function pushbutton6_Callback(hObject, eventdata, handles)
 % hObject    handle to pushbutton6 (see GCBO)
@@ -149,7 +152,9 @@ function pushbutton6_Callback(hObject, eventdata, handles)
 im = imread('Photo2.jpg');
 gray = (0.2989 * double(im(:,:,1)) + 0.5870 * double(im(:,:,2)) + 0.1140 * double(im(:,:,3)))/255;
 im2 = edge(gray, 'Canny');
-imshow(im2,'parent', handles.axes1);
+imshow(im2,'parent', handles.axes2);
+cla(handles.axes3);
+cla(handles.axes4);
 
 % --- Executes on button press in pushbutton7.
 function pushbutton7_Callback(hObject, eventdata, handles)
@@ -159,7 +164,9 @@ function pushbutton7_Callback(hObject, eventdata, handles)
 im = imread('Photo3.jpg');
 gray = (0.2989 * double(im(:,:,1)) + 0.5870 * double(im(:,:,2)) + 0.1140 * double(im(:,:,3)))/255;
 im2 = edge(gray, 'Canny');
-imshow(im2,'parent', handles.axes1);
+imshow(im2,'parent', handles.axes2);
+cla(handles.axes3);
+cla(handles.axes4);
 
 % --- Executes on button press in pushbutton8.
 function pushbutton8_Callback(hObject, eventdata, handles)
@@ -169,4 +176,6 @@ function pushbutton8_Callback(hObject, eventdata, handles)
 im = imread('Photo6.jpg');
 gray = (0.2989 * double(im(:,:,1)) + 0.5870 * double(im(:,:,2)) + 0.1140 * double(im(:,:,3)))/255;
 im2 = edge(gray, 'Canny');
-imshow(im2,'parent', handles.axes1);
+imshow(im2,'parent', handles.axes2);
+cla(handles.axes3);
+cla(handles.axes4);
